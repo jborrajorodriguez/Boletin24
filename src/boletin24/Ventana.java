@@ -48,7 +48,7 @@ public class Ventana extends JFrame implements ActionListener {
         //Hacer Visible:
         marco.setVisible(true);
         marco.setLocationRelativeTo(null);
-        marco.pack();
+       
 
     }
 
@@ -62,10 +62,9 @@ public class Ventana extends JFrame implements ActionListener {
                 int x=(int) (Math.random()*(300-0))+0;
                 int y=(int) (Math.random()*(300-0))+0;
                 g.setColor(Color.red);
-                //se colocan unas variables en las posiciones del circulo para ajustar su posición relativa en la pantalla
+               
                 g.fillOval(x, y+50, 20, 20);
-                panel.updateUI();
-                marco.pack();
+                
             }
         }else{
 
